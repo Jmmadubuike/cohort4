@@ -1,0 +1,321 @@
+/* Reset basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Universal styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background: #444;
+  top: 100%;
+  left: 0;
+  min-width: 150px;
+}
+
+.dropdown a {
+  padding: 10px;
+  display: block;
+  color: white;
+}
+
+.nav ul li:hover .dropdown {
+  display: block;
+}
+
+.contact-dropdown {
+  margin-top: 50px;
+}
+
+/* Section styling */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1,
+h2,
+h3 {
+  color: #333;
+}
+
+p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+a.btn {
+  display: inline-block;
+  background-color: black;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+a.btn:hover {
+  background-color: yellowgreen;
+  color: black;
+}
+
+/* Home Section */
+.home {
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.home h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.home p {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+/* About Section */
+.about {
+  background-color: #fff;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.about p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Services Section */
+.services {
+  background-color: #f7f7f7;
+}
+
+.services h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.service {
+  margin-bottom: 30px;
+}
+
+.service h3 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.service p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Contact Section */
+.contact {
+  background-color: #fff;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.contact p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+form {
+  display: grid;
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+form label {
+  font-size: 1rem;
+  text-align: left;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: yellowgreen;
+  color: black;
+}
+
+.navbar {
+  background-color: black;
+  padding: 0.5rem 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-links li {
+  display: flex;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: yellowgreen;
+  border-radius: 0.3rem;
+  color: black;
+}
+
+footer {
+  background-color: black; /* Dark background */
+  color: #fff; /* White text */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+}
+
+.footer-links a {
+  color: #fff; /* White text for links */
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.footer-links a:hover {
+  text-decoration: none;
+  background-color: yellowgreen;
+  color: black;
+  padding: 0.3rem;
+  border-radius: 0.2rem;
+}
+
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 1rem;
+    color: green;
+    background-color: black;
+    padding: 0.5rem;
+  }
+  .about h2 {
+    font-size: 1rem;
+  }
+  .services h2 {
+    font-size: 1rem;
+  }
+  .contact h2 {
+    font-size: 1rem;
+  }
+
+  .footer-container {
+    font-size: 0.7rem;
+  }
+
+  .footer-container p {
+    font-size: 0.8rem;
+  }
+}
+
+/* Responsive Design */
+
+/* Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 10px;
+  }
+  .nav-links {
+    gap: 15px;
+  }
+  .home h1 {
+    font-size: 2.5rem;
+  }
+  .service h3 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Mobile Screens (<768px) */
+@media (max-width: 768px) {
+  .nav-links {
+    align-items: center;
+  }
+  .nav-links a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 0.6rem;
+    padding: 5px;
+  }
+  .section {
+    padding: 40px 10px;
+  }
+  .home h1 {
+    font-size: 1.7rem;
+  }
+  .service h3 {
+    font-size: 1rem;
+  }
+  form {
+    width: 100%;
+  }
+  footer {
+    position: relative;
+  }
+}
